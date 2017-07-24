@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add user</title>
+    <style media="screen">
+      body { font-family: sans-serif; color: #333; }
+      a {padding: 22px;}
+      li { padding: 3px; }
+      .title { padding: 17px 22px; }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Our Users</h1>
+    <ul>
+      <% data.map( (data) => { %>
+        <li><strong>Name: </strong> <%= data.name %> <strong>Age: </strong> <%= data.age %> years</li>
+      <% }) %>
+    </ul>
+    <a href="/">Add new user</a>
+  </body>
+</html>
